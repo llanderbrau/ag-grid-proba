@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JavaScript example</title>
+		<meta charSet="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<style media="only screen">
+            html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                box-sizing: border-box;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            html {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0;
+                overflow: auto;
+            }
+
+            body {
+                padding: 1rem;
+                overflow: auto;
+            }
+        </style>
+		<link rel="stylesheet" href="styles.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js">
+		</script>
+		<script src="https://unpkg.com/xlsx-style@0.8.13/dist/xlsx.full.min.js">
+		</script>
+	</head>
+	<body>
+		<div class="example-wrapper">
+			<button onclick="importExcel()" style="margin-bottom: 5px">
+    Import Excel
+  </button>
+			<div id="myGrid" class="ag-theme-alpine">
+			</div>
+		</div>
+		<script>var __basePath = './';</script>
+		<script src="https://unpkg.com/ag-grid-enterprise@27.0.1/dist/ag-grid-enterprise.min.js">
+		</script>
+		<script src="main.js">
+		</script>
+	</body>
+</html>
